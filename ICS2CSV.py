@@ -117,8 +117,8 @@ time_list.sort()
 csv_file = open(CSV_FILE_NAME, mode='x')
 writer = csv.writer(csv_file, lineterminator='\n')
 writer.writerows(time_list)
-print(f'{len(time_dict)} days, SUM, {sum_time // 3600}', file=csv_file)
 
+print(f'{len(time_dict)} days, SUM, {sum_time // 3600}', file=csv_file)
 print(len(time_dict))
 
 csv_file.close()
